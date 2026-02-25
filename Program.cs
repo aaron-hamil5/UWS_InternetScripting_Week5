@@ -1,6 +1,13 @@
 var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+//Add Razor services
+builder.Services.AddRazorPages();
+
+var app = builder.Build();
+//Load defult settings, find index.cshtml
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
+app.MapRazorPages();
 
 app.Run();
