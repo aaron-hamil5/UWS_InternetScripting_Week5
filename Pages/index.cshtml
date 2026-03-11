@@ -34,7 +34,7 @@
                     <td>@customer.Country</td>
 
                     <td>
-                        <form action="~/Modifiy" method="post">
+                        <form action="~/Modify" method="post">
                             @Html.AntiForgeryToken()
                             <input type="hidden" name="hdnCustomerID" value="@customer.CustomerID"/>
                             <input type="submit" value="Modifiy"/>

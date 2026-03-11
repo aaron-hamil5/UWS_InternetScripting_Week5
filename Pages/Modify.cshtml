@@ -1,0 +1,24 @@
+@page
+@model NorthwindWeb.Pages.ModifyCustomers
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Northwind Console</title>
+    </head>
+    <body>
+        <h1>Northwind Console</h1>
+        <h2>Modifiy Customer</h2>
+
+        <p>Customer Name: <input type="text" name="updCustomerName" value="@Model.ModCus.CustomerName"/></p>
+        <p>Contact Name: <input type="text" name="updContactName" value="@Model.ModCus.ContactName"/></p>
+        <p>Address: <input type="text" name="updContactName" value="@Model.ModCus.Address"/></p>
+        <p>City: <input type="text" name="updContactName" value="@Model.ModCus.City"/></p>
+        <p>Postal Code: <input type="text" name="updContactName" value="@Model.ModCus.PostalCode"/></p>
+        <p>Country: <input type="text" name="updContactName" value="@Model.ModCus.Country"/></p>
+        <input type="submit" value="Update">
+
+    </body>
+</html>
